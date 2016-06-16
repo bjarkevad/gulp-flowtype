@@ -65,7 +65,8 @@ function executeFlow(_path, options) {
 
   var command = opts.length || options.killFlow ? (() => {
     servers.push(path.dirname(_path));
-    return 'check';
+    //return 'check';
+    return '';
   })() : 'status';
 
   var args = [
